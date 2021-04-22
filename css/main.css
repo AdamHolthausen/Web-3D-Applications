@@ -1,0 +1,19 @@
+.header-image{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-image img{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.navbar-brand img {
+    max-width: 25%;
+}
+
+@media only screen and (min-width: 922px) {
+    .navbar-collapse {
+        margin-top: 80px;
+    }
+}
