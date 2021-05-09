@@ -11,65 +11,122 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img class="img-fluid" src="imgs/coke%20logo.png" alt="Coke Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Drinks
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Appletiser</a></li>
-                            <li><a class="dropdown-item" href="#">Fanta</a></li>
-                            <li><a class="dropdown-item" href="#">Costa</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1">Contact</a>
-                    </li>
-                </ul>
+    <header class="header-image col-sm-12">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid navbar-container">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid" src="imgs/coke%20logo.png" alt="Coke Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Drinks
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Appletiser</a></li>
+                                <li><a class="dropdown-item" href="#">Fanta</a></li>
+                                <li><a class="dropdown-item" href="#">Costa</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <br>
-    <main class="container-fluid">
-        <header class="header-image col-sm-12"><img class="img-fluid" src="imgs/coca-cola-background.jpg" alt="2 Coca Cola bottles">
+        </nav>
+        <div class="header-content">
             <div>
                 <h1>Coca Cola Great Britain</h1>
                 <h2>Founded by Dr John S Pemberton</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at dolores ea eius fugiat illo impedit iste iusto laborum maxime nemo optio perspiciatis porro repudiandae sapiente suscipit, veritatis vero vitae.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at dolores ea eius fugiat illo
+                    impedit iste iusto laborum maxime nemo optio perspiciatis porro repudiandae sapiente suscipit,
+                    veritatis vero vitae.</p>
             </div>
-        </header>
-        <div class="cards row">
-            <div class="card col-sm-4">
-                <img class="img-fluid" src="imgs/fanta.jpg" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="gapInfo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aspernatur iure. Animi dicta, distinctio ducimus fugiat minima mollitia nam necessitatibus nostrum qui! Eos illum modi quasi quia, quis quo repudiandae!</p>
+        </div>
+        <div class="cards">
+            <div class="card col">
+                <div id="fantaCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#fantaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#fantaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#fantaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/fanta.jpg" class="d-block w-100" alt="Fanta image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/coca-cola-background.jpg" class="d-block w-100" alt="Fanta image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/fanta.jpg" class="d-block w-100" alt="Fanta image">
+                        </div>
+                    </div>
+                </div>
                 <div class="card-body">
                     <h4>Fanta</h4>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur culpa delectus error harum illum quam quis reiciendis sequi similique. Commodi dignissimos enim eum labore similique? Deleniti mollitia saepe tenetur.</p>
                     <a href="">Find out more...</a></div>
             </div>
-            <div class="card col-sm-4">
-                <img class="img-fluid" src="imgs/appletiser.jpg" alt="">
+            <div class="card col">
+                <div id="appletiserCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#appletiserCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#appletiserCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#appletiserCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/appletiser.jpg" class="d-block w-100" alt="Fanta image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/coca-cola-background.jpg" class="d-block w-100" alt="Fanta image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/appletiser.jpg" class="d-block w-100" alt="Fanta image">
+                        </div>
+                    </div>
+                </div>
                 <div class="card-body">
                     <h4>Appletiser</h4>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda culpa dolore id ipsa libero mollitia pariatur quas quos, recusandae suscipit ullam. Accusantium dolores eaque minus nesciunt tempore. In, libero.</p>
                     <a href="">Find out more...</a></div>
             </div>
-            <div class="card col-sm-4">
-                <img class="img-fluid" src="imgs/costa.png" alt="">
+            <div class="card col">
+                <div id="costaCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#costaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#costaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#costaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/costa.png" class="d-block w-100" alt="Fanta image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/coca-cola-background.jpg" class="d-block w-100" alt="Fanta image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/costa.png" class="d-block w-100" alt="Fanta image">
+                        </div>
+                    </div>
+                </div>
                 <div class="card-body">
                     <h4>Costa-Coffee</h4>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti odit optio quia. Ab aperiam cupiditate eaque eum, inventore iure laudantium magnam, maxime necessitatibus omnis qui quisquam reiciendis repellendus sed voluptas?</p>
