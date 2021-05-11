@@ -13,6 +13,10 @@ body{
     background-position: center top;
 }
 
+#fanta{
+    background: #FF8201;
+}
+
 .header-image nav a{
     font-size: 1.25em !important;
 }
