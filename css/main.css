@@ -14,14 +14,18 @@ body{
 }
 
 #fanta{
-    background: #FF8201;
+    background-image: url("/imgs/Fanta-page-Logo.png");
+}
+
+#appletiser{
+    background-image: url("/imgs/appletiser-logo.png");
 }
 
 .header-image nav a{
     font-size: 1.25em !important;
 }
 
-.header-content {
+.header-content{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,18 +83,18 @@ body{
     height: 50%;
 }
 
-.navbar-brand img {
+.navbar-brand img{
     max-width: 25%;
 }
 
-.gapInfo {
+.gapInfo{
     margin: 50px 0 75px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.gapInfo p {
+.gapInfo p{
     width: 50%;
     text-align: center;
 }
@@ -99,6 +103,10 @@ body{
     background-color: #000;
     color: #FFFFFF;
     padding: 30px 30px 0;
+}
+
+.model{
+    margin: 10% 0;
 }
 
 @media only screen and (min-width: 768px) {
