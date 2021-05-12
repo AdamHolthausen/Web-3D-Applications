@@ -13,6 +13,10 @@ body{
     background-position: center top;
 }
 
+#coca-cola{
+    background-image: url("/imgs/cokepage.png");
+}
+
 .header-image nav a{
     font-size: 1.25em !important;
 }
