@@ -6,18 +6,30 @@ body{
 .header-image{
     display: flex;
     flex-direction: column;
-    background-image: url("/imgs/coca-cola-background.jpg");
+    background-image: url("../imgs/coca-cola-background.jpg");
     background-size: cover;
     height: 60vh;
     width: 100%;
     background-position: center top;
 }
 
+#fanta{
+    background-image: url("../imgs/Fanta-page-Logo.jpg");
+}
+
+#appletiser{
+    background-image: url("../imgs/appletiser-logo.jpg");
+}
+
+#costa{
+    background-image: url("../imgs/costa-background.jpg");
+}
+
 .header-image nav a{
     font-size: 1.25em !important;
 }
 
-.header-content {
+.header-content{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,10 +64,14 @@ body{
     justify-content: flex-end;
 }
 
+main{
+    margin: 100px 0;
+}
+
 .cards .card{
     justify-content: center;
     align-items: center;
-    margin: 16vh 0;
+    margin-top: 16vh;
     border: none;
 }
 
@@ -63,7 +79,7 @@ body{
     margin-top: 0;
 }
 
-.card .card-body{
+.cards .card .card-body{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -75,18 +91,18 @@ body{
     height: 50%;
 }
 
-.navbar-brand img {
+.navbar-brand img{
     max-width: 25%;
 }
 
-.gapInfo {
-    margin: 50px 0 75px 0;
+.gapInfo{
+    margin-bottom: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.gapInfo p {
+.gapInfo p{
     width: 50%;
     text-align: center;
 }
@@ -95,6 +111,34 @@ body{
     background-color: #000;
     color: #FFFFFF;
     padding: 30px 30px 0;
+}
+
+.model, .model-text{
+    margin: 10% 0;
+    display: flex;
+}
+
+.banner-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-drinks .card:nth-child(2){
+    margin: 50px 0;
+}
+
+.other-drinks{
+    flex-direction: column;
+}
+
+/*******Media Queries for other display types**********/
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+    .header-image{
+        height: 80vh;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -112,7 +156,7 @@ body{
     }
 
     .header-image{
-        height: 90vh;
+        height: 65vh;
     }
 
     .header-content{
@@ -122,4 +166,13 @@ body{
     .header-content div{
         width: 50%;
     }
+
+    .other-drinks .card:nth-child(2){
+        margin: 0 50px;
+    }
+
+    .other-drinks{
+        flex-direction: row;
+    }
+
 }
