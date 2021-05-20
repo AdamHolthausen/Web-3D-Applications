@@ -13,6 +13,10 @@ body{
     background-position: center top;
 }
 
+#coca-cola{
+    background-image: url("../imgs/cokepage.png");
+}
+
 #fanta{
     background-image: url("../imgs/Fanta-page-Logo.jpg");
 }
