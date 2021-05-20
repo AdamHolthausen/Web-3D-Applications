@@ -14,19 +14,19 @@ function traverseMaterials (object, callback) {
 }
 
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 0.1, 1000 );
+const camera = new THREE.PerspectiveCamera( 70, 1.25, 0.1, 1000 );
 camera.position.set(30,30,30);
 const renderer = new THREE.WebGLRenderer();
 renderer.setPixelRatio( window.devicePixelRatio );
 const controls = new OrbitControls(camera, renderer.domElement);
 
-renderer.setSize( window.innerWidth, window.innerHeight );
+renderer.setSize( 400, 400 );
 
 document.querySelector("#model").appendChild(renderer.domElement);
-
 const loader = new GLTFLoader();
 let obj;
-loader.load('./models/fanta.glb', gltf =>
+let fileName = document.getElementById("model").classList[1];
+loader.load(`./models/${fileName}.glb`, gltf =>
 {
 	obj = gltf.scene;
 	scene.add(obj);
@@ -34,7 +34,7 @@ loader.load('./models/fanta.glb', gltf =>
 {
 	console.error(error);
 })
-scene.background = new THREE.Color(0x2C2C2C);
+scene.background = new THREE.Color(0xc6cccc);
 scene.add( new THREE.AmbientLight( 0x222222 ) );
 const light = new THREE.HemisphereLight(0xffffff, 0x000000, 2);
 scene.add(light);
