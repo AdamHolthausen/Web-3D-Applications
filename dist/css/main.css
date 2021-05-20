@@ -14,7 +14,7 @@ body{
 }
 
 #coca-cola{
-    background-image: url("/imgs/cokepage.png");
+    background-image: url("../imgs/cokepage.png");
 }
 
 #fanta{
